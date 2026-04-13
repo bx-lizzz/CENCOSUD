@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cencosud Perú</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css"> <!-- minúscula -->
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-pro">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+      <span class="logo-circle"></span>
+      <span>Cencosud</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+        <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="#ofrecemos">Ofrecemos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#testimonios">Historias</a></li>
+        <li class="nav-item ms-lg-3">
+          <a class="btn btn-nav" href="#encuesta">Postular</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <h1>Tu futuro empieza aquí</h1>
+    <p>Descubre oportunidades en Cencosud</p>
+  </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section id="testimonios" class="animar py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="mb-3">Historias que inspiran 💙</h2>
+
+    <div class="row justify-content-center g-4">
+
+      <div class="col-md-4">
+        <div class="card-testimonio">
+          <p class="descripcion">
+            “Empecé desde cero y hoy lidero un equipo. El crecimiento es real.”
+          </p>
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e" class="foto">
+          <h5>Carlos Ramírez</h5>
+          <span>Supervisor</span>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card-testimonio">
+          <p class="descripcion">
+            “Aproveché cada oportunidad y fui creciendo paso a paso.”
+          </p>
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2" class="foto">
+          <h5>María Torres</h5>
+          <span>Jefa de tienda</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ENCUESTA -->
+<section id="crecer" class="py-5 text-center bg-light">
+  <div class="container">
+
+    <h2>Quiero crecer en Cencosud 🚀</h2>
+
+    <p class="mb-4 texto-intro">
+      En Cencosud promovemos el desarrollo interno de nuestros colaboradores. 
+      Completa este formulario para registrar tu interés en nuevas oportunidades 
+      y rutas de crecimiento dentro de la empresa.
+    </p>
+
+    <form id="formulario" class="form-box">
+
+      <!-- ROL ACTUAL -->
+      <label>Rol actual</label>
+      <input type="text" id="rol" placeholder="Ej: Cajero, Reponedor, Almacén" required>
+
+      <!-- ÁREA DE INTERÉS -->
+      <label>Área de interés</label>
+      <select id="interes" required>
+        <option value="">Selecciona un área</option>
+        <option>Atención al cliente</option>
+        <option>Supervisión</option>
+        <option>Logística</option>
+        <option>Administración</option>
+        <option>Tecnología</option>
+      </select>
+
+      <!-- HABILIDADES -->
+      <label>Habilidades</label>
+      <input type="text" id="habilidades" placeholder="Ej: liderazgo, organización, comunicación" required>
+
+      <!-- UBICACIÓN -->
+      <label>Ubicación</label>
+      <input type="text" id="ubicacion" placeholder="Ej: Lima, Arequipa, Trujillo" required>
+
+      <!-- BOTÓN -->
+      <button type="submit">Registrar interés</button>
+
+      <!-- PRIVACIDAD -->
+      <p class="privacidad">
+        🔒 La información registrada será utilizada exclusivamente por el área de talento humano 
+        de Cencosud para identificar oportunidades de crecimiento interno y desarrollo profesional.
+      </p>
+
+    </form>
+
+    <p id="mensaje"></p>
+
+  </div>
+</section>
+
+<footer class="text-center">
+  <div class="footer-bar"></div>
+  <div class="p-3">© 2026 Cencosud Perú</div>
+</footer>
+
+<!-- JS -->
+<script src="js/script.js"></script> <!-- minúscula -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
