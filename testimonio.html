@@ -17,10 +17,11 @@
 
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-pro">
-  <div class="container">
-    <a class="navbar-brand d-flex align-items-center gap-2" href="#">
-      <span class="logo-circle"></span>
-      <span>Cencosud</span>
+  <div class="container-fluid px-4">
+
+    <!-- LOGO REAL -->
+    <a class="navbar-brand" href="#">
+      <img src="img/logo.png" alt="Cencosud" class="logo-img">
     </a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
@@ -28,7 +29,7 @@
     </button>
 
     <div class="collapse navbar-collapse" id="menu">
-      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
         <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
         <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
         <li class="nav-item"><a class="nav-link" href="#ofrecemos">Ofrecemos</a></li>
@@ -38,6 +39,7 @@
         </li>
       </ul>
     </div>
+
   </div>
 </nav>
 
@@ -46,6 +48,61 @@
   <div class="container">
     <h1>Tu futuro empieza aquí</h1>
     <p>Descubre oportunidades en Cencosud</p>
+  </div>
+</section>
+
+<!-- NOSOTROS -->
+<section id="nosotros" class="nosotros-section py-5">
+  <div class="container">
+
+    <div class="row align-items-center g-5">
+
+      <!-- TEXTO -->
+      <div class="col-lg-6">
+        <h2 class="titulo-nosotros mb-4">Sobre Cencosud</h2>
+
+        <p class="texto-nosotros">
+          Cencosud es uno de los grupos de retail más grandes de América Latina, con presencia en Perú, Chile, Argentina, Brasil y Colombia. 
+          En el país, opera a través de reconocidas marcas como Wong y Metro, consolidándose como un referente en el sector.
+        </p>
+
+        <p class="texto-nosotros">
+          La compañía cuenta con miles de colaboradores y una sólida trayectoria basada en la innovación, la cercanía con el cliente 
+          y la excelencia operativa en cada uno de sus formatos de negocio.
+        </p>
+
+        <p class="texto-nosotros">
+          Como parte de su estrategia de crecimiento, Cencosud impulsa el desarrollo del talento interno, promoviendo oportunidades 
+          de movilidad laboral y formación continua para sus colaboradores.
+        </p>
+
+        <!-- MINI DATOS -->
+        <div class="row mt-4 text-center">
+          <div class="col-4">
+            <h4 class="dato">+5</h4>
+            <span>Países</span>
+          </div>
+          <div class="col-4">
+            <h4 class="dato">+1000</h4>
+            <span>Tiendas</span>
+          </div>
+          <div class="col-4">
+            <h4 class="dato">+100k</h4>
+            <span>Colaboradores</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="col-lg-6 text-center">
+        <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3" 
+             class="img-fluid img-nosotros" 
+             alt="Retail Cencosud">
+      </div>
+
+    </div>
+
   </div>
 </section>
 
@@ -88,54 +145,90 @@ Hoy lidero mi propia tienda y sigo desarrollándome profesionalmente.
 </section>
 
 <!-- ENCUESTA -->
-<section id="crecer" class="py-5 text-center bg-light">
-  <div class="container">
+<section id="crecer" class="py-5 encuesta-section">
+  <div class="container text-center">
 
-    <h2>Quiero crecer en Cencosud 🚀</h2>
+    <h2 class="titulo">Tu Ruta en Cencosud 🚀</h2>
 
-    <p class="mb-4 texto-intro">
-      En Cencosud promovemos el desarrollo interno de nuestros colaboradores. 
-      Completa este formulario para registrar tu interés en nuevas oportunidades 
-      y rutas de crecimiento dentro de la empresa.
+    <p class="mb-5 texto-intro">
+      En Cencosud impulsamos el desarrollo interno de nuestros colaboradores. 
+      Completa este formulario para identificar oportunidades de crecimiento y construir tu ruta profesional dentro de la empresa.
     </p>
 
-    <form id="formulario" class="form-box">
+    <div class="form-box mx-auto">
+      <form id="formulario">
 
-      <!-- ROL ACTUAL -->
-      <label>Rol actual</label>
-      <input type="text" id="rol" placeholder="Ej: Cajero, Reponedor, Almacén" required>
+        <!-- DATOS PERSONALES -->
+        <h5 class="seccion">Datos personales</h5>
 
-      <!-- ÁREA DE INTERÉS -->
-      <label>Área de interés</label>
-      <select id="interes" required>
-        <option value="">Selecciona un área</option>
-        <option>Atención al cliente</option>
-        <option>Supervisión</option>
-        <option>Logística</option>
-        <option>Administración</option>
-        <option>Tecnología</option>
-      </select>
+        <div class="mb-3 text-start">
+          <label>Nombre completo</label>
+          <input type="text" class="form-control" required>
+        </div>
 
-      <!-- HABILIDADES -->
-      <label>Habilidades</label>
-      <input type="text" id="habilidades" placeholder="Ej: liderazgo, organización, comunicación" required>
+        <div class="mb-3 text-start">
+          <label>Sede / Tienda</label>
+          <input type="text" class="form-control" placeholder="Ej: Metro San Miguel">
+        </div>
 
-      <!-- UBICACIÓN -->
-      <label>Ubicación</label>
-      <input type="text" id="ubicacion" placeholder="Ej: Lima, Arequipa, Trujillo" required>
+        <div class="mb-3 text-start">
+          <label>Rol actual</label>
+          <input type="text" class="form-control" placeholder="Ej: Cajero">
+        </div>
 
-      <!-- BOTÓN -->
-      <button type="submit">Registrar interés</button>
+        <!-- INTERÉS PROFESIONAL -->
+        <h5 class="seccion">Intereses de crecimiento</h5>
 
-      <!-- PRIVACIDAD -->
-      <p class="privacidad">
-        🔒 La información registrada será utilizada exclusivamente por el área de talento humano 
-        de Cencosud para identificar oportunidades de crecimiento interno y desarrollo profesional.
-      </p>
+        <div class="mb-3 text-start">
+          <label>Área en la que deseas crecer</label>
+          <select class="form-select">
+            <option>Atención al cliente</option>
+            <option>Supervisión</option>
+            <option>Logística</option>
+            <option>Administración</option>
+            <option>Tecnología</option>
+          </select>
+        </div>
 
-    </form>
+        <div class="mb-3 text-start">
+          <label>Puesto al que aspiras</label>
+          <input type="text" class="form-control" placeholder="Ej: Supervisor de tienda">
+        </div>
 
-    <p id="mensaje"></p>
+        <div class="mb-3 text-start">
+          <label>Disponibilidad para movilidad</label>
+          <select class="form-select">
+            <option>Misma sede</option>
+            <option>Otra sede en mi ciudad</option>
+            <option>Otra ciudad</option>
+          </select>
+        </div>
+
+        <!-- PERFIL -->
+        <h5 class="seccion">Perfil y habilidades</h5>
+
+        <div class="mb-3 text-start">
+          <label>Años en la empresa</label>
+          <input type="number" class="form-control">
+        </div>
+
+        <div class="mb-3 text-start">
+          <label>Habilidades principales</label>
+          <input type="text" class="form-control" placeholder="Ej: liderazgo, organización">
+        </div>
+
+        <div class="mb-3 text-start">
+          <label>¿Por qué quieres crecer?</label>
+          <textarea class="form-control" rows="3"></textarea>
+        </div>
+
+        <!-- BOTÓN -->
+        <button class="btn btn-enviar w-100 mt-3">
+          Registrar interés
+        </button>
+
+      </form>
+    </div>
 
   </div>
 </section>
@@ -146,7 +239,7 @@ Hoy lidero mi propia tienda y sigo desarrollándome profesionalmente.
 </footer>
 
 <!-- JS -->
-<script src="js/script.js"></script> <!-- minúscula -->
+<script src="js/script.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
