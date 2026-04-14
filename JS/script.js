@@ -43,9 +43,3 @@ form.addEventListener("submit", async (e) => {
     console.error(error);
   }
 });
-
-  } catch (error) {
-    document.getElementById("mensaje").innerText = "❌ Error al registrar";
-    console.error(error);
-  }
-});
